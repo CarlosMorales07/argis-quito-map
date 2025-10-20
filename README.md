@@ -1,19 +1,107 @@
+# 🗺️ Mapa de Quito - ESRI Ecuador
 
-# React + Vite
+Aplicación web desarrollada con React que visualiza un mapa interactivo de Quito, centrado en el edificio de ESRI Ecuador (Av. 6 de Diciembre y Av. Portugal), utilizando el ArcGIS Maps SDK for JavaScript.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Características
 
-Currently, two official plugins are available:
+- 📍 Mapa centrado en ESRI Ecuador (Quito)
+- 🔄 Widget de alternancia entre mapas base (Calles ↔️ Satélite)
+- 📌 Marcador interactivo con popup informativo
+- 🎨 Interfaz moderna y responsive
+- ⚛️ Desarrollado con React y Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías
 
-## React Compiler
+- React 18.2.0
+- ArcGIS Maps SDK for JavaScript (@arcgis/core) 4.28+
+- Vite 5.0+
+- CSS3
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📋 Requisitos Previos
 
-## Expanding the ESLint configuration
+- Node.js v16 o superior
+- npm o yarn
+- Git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Instalación y Ejecución
 
-# argis-quito-map
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/CarlosMorales07/arcgis-quito-map.git
+cd arcgis-quito-map
+```
+
+### 2. Instalar dependencias
+```bash
+npm install
+```
+
+### 3. Ejecutar en modo desarrollo
+```bash
+npm run dev
+```
+
+La aplicación estará disponible en `http://localhost:5173`
+
+### 4. Compilar para producción
+```bash
+npm run build
+```
+
+Los archivos optimizados se generarán en la carpeta `dist/`
+
+### 5. Previsualizar build de producción
+```bash
+npm run preview
+```
+
+## 📂 Estructura del Proyecto
+```
+arcgis-quito-map/
+├── public/
+├── src/
+│   ├── components/
+│   │   └── MapComponent.jsx      # Componente principal del mapa
+│   ├── App.jsx                   # Componente raíz
+│   ├── App.css                   # Estilos principales
+│   ├── main.jsx                  # Punto de entrada
+│   └── index.css                 # Estilos globales
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🎯 Funcionalidades
+
+### Widget de Basemap Toggle
+- Ubicación: Esquina inferior derecha
+- Permite alternar entre vista de calles y satélite
+- Click en el ícono para cambiar
+
+### Marcador ESRI Ecuador
+- Ubicado en Av. 6 de Diciembre y Av. Portugal
+- Click en el marcador para ver información
+- Coordenadas: -0.1965, -78.4875
+
+### Pagina desplegada en Render 
+
+https://argis-quito-map.onrender.com 
+
+## 📚 Recursos
+
+- [ArcGIS Maps SDK for JavaScript](https://developers.arcgis.com/javascript/latest/)
+- [React Documentation](https://react.dev/)
+- [Vite Documentation](https://vitejs.dev/)
+
+## 👨‍💻 Autor
+
+Carlos Morales - [GitHub](https://github.com/CarlosMorales07)
+
+## 📄 Licencia
+
+MIT
+
+---
+
+⭐ Si este proyecto te fue útil, considera darle una estrella
